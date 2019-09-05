@@ -13,6 +13,8 @@
 		11EBBC8A231F265E0063244E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EBBC89231F265E0063244E /* Assets.xcassets */; };
 		11EBBC8D231F265E0063244E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EBBC8B231F265E0063244E /* LaunchScreen.storyboard */; };
 		11EBBC98231F265E0063244E /* myCVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBBC97231F265E0063244E /* myCVTests.swift */; };
+		11EBBCA3231F273B0063244E /* myCVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBBCA2231F273B0063244E /* myCVViewController.swift */; };
+		11F7D29123207499003FC3F3 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F7D29023207499003FC3F3 /* SummaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		11EBBC93231F265E0063244E /* myCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myCVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EBBC97231F265E0063244E /* myCVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCVTests.swift; sourceTree = "<group>"; };
 		11EBBC99231F265E0063244E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11EBBCA2231F273B0063244E /* myCVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCVViewController.swift; sourceTree = "<group>"; };
+		11F7D29023207499003FC3F3 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				11EBBC82231F265B0063244E /* AppDelegate.swift */,
 				11EBBC84231F265B0063244E /* ViewController.swift */,
 				11EBBC86231F265B0063244E /* Main.storyboard */,
+				11F7D29023207499003FC3F3 /* SummaryViewController.swift */,
+				11EBBCA2231F273B0063244E /* myCVViewController.swift */,
 				11EBBC89231F265E0063244E /* Assets.xcassets */,
 				11EBBC8B231F265E0063244E /* LaunchScreen.storyboard */,
 				11EBBC8E231F265E0063244E /* Info.plist */,
@@ -198,7 +204,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				11EBBC85231F265B0063244E /* ViewController.swift in Sources */,
+				11EBBCA3231F273B0063244E /* myCVViewController.swift in Sources */,
 				11EBBC83231F265B0063244E /* AppDelegate.swift in Sources */,
+				11F7D29123207499003FC3F3 /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
