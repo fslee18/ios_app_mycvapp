@@ -14,6 +14,7 @@ class myCVViewController: UIViewController {
     var jsonResponseLastname = ""
     var jsonResponseEmail = ""
     var jsonResponseCell = ""
+    var jsonResponseSummary = ""
     var jsonResponseSkill : [String] = []
     
     
@@ -45,7 +46,7 @@ class myCVViewController: UIViewController {
     
     func getCVdetails() {
         
-        guard let url = URL(string: "https://gist.githubusercontent.com/fslee18/16fc9ff447df62997674c87ff8731bcf/raw/8df52c911338446d2e9768b70105122280a903ca/myCVapp.json") else {return}
+        guard let url = URL(string: "https://gist.githubusercontent.com/fslee18/16fc9ff447df62997674c87ff8731bcf/raw/8f9d22b76967b274d3a93d187405d316e4a427cc/myCVapp.json") else {return}
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let dataResponse = data,
                 error == nil else {
@@ -59,11 +60,13 @@ class myCVViewController: UIViewController {
                 }
                 print(jsonResponseArray["jemail"]! as! String)
                 print(jsonResponseArray["jskill"]! as! [String])
+                print(jsonResponseArray["jwork"]! as! [Any])
                 
                 self.jsonResponseFirstname = jsonResponseArray["jfirstname"]! as! String
                 self.jsonResponseLastname = jsonResponseArray["jlastname"]! as! String
                 self.jsonResponseEmail = jsonResponseArray["jemail"]! as! String
                 self.jsonResponseCell = jsonResponseArray["jcellphone"]! as! String
+                self.jsonResponseSummary = jsonResponseArray["jsummary"]! as! String
                 self.jsonResponseSkill = jsonResponseArray["jskill"]! as! [String]
 
                 DispatchQueue.main.async{
@@ -91,6 +94,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         summaryVC.slastName = self.jsonResponseLastname
         summaryVC.semail = self.jsonResponseEmail
         summaryVC.scellphone = self.jsonResponseCell
+        summaryVC.ssummary = self.jsonResponseSummary
         summaryVC.sskill = self.jsonResponseSkill
         
     }

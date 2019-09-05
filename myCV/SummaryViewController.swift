@@ -14,6 +14,7 @@ class SummaryViewController: UIViewController {
     var slastName = ""
     var semail = ""
     var scellphone = ""
+    var ssummary = ""
     var sskill : [String] = []
     
     
@@ -39,7 +40,7 @@ class SummaryViewController: UIViewController {
         case 0:
             summaryTextView.text = "My Profile: \(sfirstName)"
         case 1:
-            summaryTextView.text = "My Professional \(semail)"
+            summaryTextView.text = "My Professional: \(ssummary)"
         case 2:
             summaryTextView.text = "My work"
         default:
