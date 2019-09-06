@@ -16,6 +16,9 @@ class SummaryViewController: UIViewController {
     var scellphone = ""
     var ssummary = ""
     var sskill : [String] = []
+    var swork : [[String: String]] = [[:]]
+    var skillString = ""
+    var workString = ""
     
     
     @IBOutlet weak var summaryTextView: UITextView!
@@ -28,8 +31,27 @@ class SummaryViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print(sskill)
-        summaryTextView.text = "My Profile: \(sfirstName)"
+        
+        for n in sskill {
+           skillString += " " + n
+        }
+        print(skillString)
+        for i in 0...swork.count-1 {
+           workString  +=
+            "Title - \(swork[i]["title"]!) \n" +
+            "Company - \(swork[i]["company"]!) \n" +
+            "Date - From \(swork[i]["from"]!) To \(swork[i]["to"]!) \n" +
+            "Main responsibilities - \(swork[i]["responsibilities"]!) \n" +
+            "------------------------------ \n"
+        }
+        print(workString)
+        
+            summaryTextView.text =
+            "My Profile: \n" +
+            "Firstname： \(sfirstName.uppercased()) Lastname: \(slastName.uppercased())\n" +
+            "Email Address: \(semail)\n" +
+            "Cell Phone: \(scellphone)\n" +
+        "Technical Skill(s): \(skillString.uppercased())\n"
         self.view.addSubview(summaryTextView)
     }
     
@@ -38,11 +60,18 @@ class SummaryViewController: UIViewController {
         
         switch sender.selectedSegmentIndex {
         case 0:
-            summaryTextView.text = "My Profile: \(sfirstName)"
+            summaryTextView.text =
+                "My Profile: \n" +
+                "Firstname： \(sfirstName.uppercased()) Lastname: \(slastName.uppercased())\n" +
+                "Email Address: \(semail)\n" +
+                "Cell Phone: \(scellphone)\n" +
+            "Technical Skill(s): \(skillString.uppercased())\n"
         case 1:
-            summaryTextView.text = "My Professional: \(ssummary)"
+            summaryTextView.text = "My Professional: \n\(ssummary)"
         case 2:
-            summaryTextView.text = "My work"
+            summaryTextView.text =
+            "My Work Experience: \n" +
+            "\(workString)"
         default:
            break
         }

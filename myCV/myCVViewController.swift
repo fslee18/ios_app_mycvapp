@@ -16,6 +16,7 @@ class myCVViewController: UIViewController {
     var jsonResponseCell = ""
     var jsonResponseSummary = ""
     var jsonResponseSkill : [String] = []
+    var jsonResponseWork : [[String: String]] = [[:]]
     
     
     @IBOutlet weak var loadingActivity: UIActivityIndicatorView!
@@ -46,7 +47,7 @@ class myCVViewController: UIViewController {
     
     func getCVdetails() {
         
-        guard let url = URL(string: "https://gist.githubusercontent.com/fslee18/16fc9ff447df62997674c87ff8731bcf/raw/8f9d22b76967b274d3a93d187405d316e4a427cc/myCVapp.json") else {return}
+        guard let url = URL(string: "https://gist.githubusercontent.com/fslee18/16fc9ff447df62997674c87ff8731bcf/raw/2990bb87deba7976b7384dbed433e051f3b72d50/myCVapp.json") else {return}
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let dataResponse = data,
                 error == nil else {
@@ -68,6 +69,7 @@ class myCVViewController: UIViewController {
                 self.jsonResponseCell = jsonResponseArray["jcellphone"]! as! String
                 self.jsonResponseSummary = jsonResponseArray["jsummary"]! as! String
                 self.jsonResponseSkill = jsonResponseArray["jskill"]! as! [String]
+                self.jsonResponseWork = jsonResponseArray["jwork"]! as! [[String: String]]
 
                 DispatchQueue.main.async{
                 
@@ -96,6 +98,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         summaryVC.scellphone = self.jsonResponseCell
         summaryVC.ssummary = self.jsonResponseSummary
         summaryVC.sskill = self.jsonResponseSkill
+        summaryVC.swork = self.jsonResponseWork
         
     }
     

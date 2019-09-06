@@ -18,20 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My CV app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWa-ku-opF">
-                                <rect key="frame" x="157" y="285" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My CV app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWa-ku-opF">
+                                <rect key="frame" x="157" y="285" width="100" height="24"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="w2S-Am-6Fs">
-                                <rect key="frame" x="197" y="423" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="w2S-Am-6Fs">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMe-dZ-aaa">
-                                <rect key="frame" x="190" y="344" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMe-dZ-aaa">
+                                <rect key="frame" x="157" y="346" width="100" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="View"/>
                                 <connections>
                                     <action selector="viewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cgz-0J-d9N"/>
@@ -39,6 +37,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BMe-dZ-aaa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="190" id="08O-2h-raH"/>
+                            <constraint firstItem="BMe-dZ-aaa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1kr-AK-O0Z"/>
+                            <constraint firstItem="OWa-ku-opF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="8Bl-Kn-mNU"/>
+                            <constraint firstItem="OWa-ku-opF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Y0-IM-XWz"/>
+                            <constraint firstItem="w2S-Am-6Fs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IW6-R6-yqS"/>
+                            <constraint firstItem="w2S-Am-6Fs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="197" id="LFf-OQ-ud4"/>
+                            <constraint firstItem="w2S-Am-6Fs" firstAttribute="top" secondItem="BMe-dZ-aaa" secondAttribute="bottom" constant="47" id="TwH-dd-P0Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BMe-dZ-aaa" secondAttribute="trailing" constant="190" id="WGR-XG-mwE"/>
+                            <constraint firstItem="BMe-dZ-aaa" firstAttribute="top" secondItem="OWa-ku-opF" secondAttribute="bottom" constant="29" id="ax7-Fp-C8Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w2S-Am-6Fs" secondAttribute="trailing" constant="197" id="edp-nK-1kx"/>
+                            <constraint firstItem="OWa-ku-opF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="jIM-PK-Ap9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OWa-ku-opF" secondAttribute="trailing" constant="157" id="saE-YZ-cfF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w2S-Am-6Fs" secondAttribute="bottom" constant="419" id="zJI-DX-SXO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="SJL-8M-YHP"/>
@@ -59,16 +72,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uwh-3v-Vfo">
-                                <rect key="frame" x="57" y="208" width="300" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwh-3v-Vfo">
+                                <rect key="frame" x="57" y="208" width="300" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JtU-TO-xcG">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JtU-TO-xcG">
                                 <rect key="frame" x="57" y="135" width="300" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Profile"/>
                                     <segment title="Professional"/>
@@ -80,6 +91,15 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uwh-3v-Vfo" firstAttribute="top" secondItem="JtU-TO-xcG" secondAttribute="bottom" constant="45" id="Re3-1k-wbr"/>
+                            <constraint firstItem="JtU-TO-xcG" firstAttribute="leading" secondItem="Ukm-Hu-Xrt" secondAttribute="leading" constant="57" id="SgB-E8-Kxx"/>
+                            <constraint firstItem="JtU-TO-xcG" firstAttribute="top" secondItem="Ukm-Hu-Xrt" secondAttribute="top" constant="47" id="ZdL-iN-ADN"/>
+                            <constraint firstItem="Ukm-Hu-Xrt" firstAttribute="trailing" secondItem="uwh-3v-Vfo" secondAttribute="trailing" constant="57" id="bgk-8s-GgW"/>
+                            <constraint firstItem="uwh-3v-Vfo" firstAttribute="leading" secondItem="Ukm-Hu-Xrt" secondAttribute="leading" constant="57" id="eZw-fQ-BQs"/>
+                            <constraint firstItem="Ukm-Hu-Xrt" firstAttribute="bottom" secondItem="uwh-3v-Vfo" secondAttribute="bottom" constant="57" id="uzT-8v-5py"/>
+                            <constraint firstItem="Ukm-Hu-Xrt" firstAttribute="trailing" secondItem="JtU-TO-xcG" secondAttribute="trailing" constant="88" id="yRB-af-Nos"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ukm-Hu-Xrt"/>
                     </view>
                     <toolbarItems/>
