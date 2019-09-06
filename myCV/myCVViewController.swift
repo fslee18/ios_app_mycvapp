@@ -74,8 +74,9 @@ class myCVViewController: UIViewController {
                 DispatchQueue.main.async{
                 
                self.performSegue(withIdentifier: "moveToSummary", sender: self)
-                   //self.loadingActivity.alpha = 0.01
+                   
                    self.loadingActivity.stopAnimating()
+                   self.loadingActivity.alpha = 0.05
                 }
 
 
