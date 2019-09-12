@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1103A2F42329D0E1002F7E52 /* myCVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1103A2F32329D0E1002F7E52 /* myCVUITests.swift */; };
+		114387432329D71E008A91C5 /* myCVUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114387422329D71E008A91C5 /* myCVUITest.swift */; };
 		11EBBC83231F265B0063244E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBBC82231F265B0063244E /* AppDelegate.swift */; };
 		11EBBC85231F265B0063244E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBBC84231F265B0063244E /* ViewController.swift */; };
 		11EBBC88231F265B0063244E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EBBC86231F265B0063244E /* Main.storyboard */; };
@@ -19,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		114387452329D71E008A91C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11EBBC77231F265B0063244E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11EBBC7E231F265B0063244E;
+			remoteInfo = myCV;
+		};
 		11EBBC94231F265E0063244E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 11EBBC77231F265B0063244E /* Project object */;
@@ -29,7 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1103A2F32329D0E1002F7E52 /* myCVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCVUITests.swift; sourceTree = "<group>"; };
+		114387342329D628008A91C5 /* myCVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myCVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		114387402329D71E008A91C5 /* myCVUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myCVUITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		114387422329D71E008A91C5 /* myCVUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCVUITest.swift; sourceTree = "<group>"; };
+		114387442329D71E008A91C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11EBBC7F231F265B0063244E /* myCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EBBC82231F265B0063244E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EBBC84231F265B0063244E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +55,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		114387312329D628008A91C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1143873D2329D71E008A91C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11EBBC7C231F265B0063244E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,11 +86,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114387412329D71E008A91C5 /* myCVUITest */ = {
+			isa = PBXGroup;
+			children = (
+				114387422329D71E008A91C5 /* myCVUITest.swift */,
+				114387442329D71E008A91C5 /* Info.plist */,
+			);
+			path = myCVUITest;
+			sourceTree = "<group>";
+		};
 		11EBBC76231F265B0063244E = {
 			isa = PBXGroup;
 			children = (
 				11EBBC81231F265B0063244E /* myCV */,
 				11EBBC96231F265E0063244E /* myCVTests */,
+				114387412329D71E008A91C5 /* myCVUITest */,
 				11EBBC80231F265B0063244E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +110,8 @@
 			children = (
 				11EBBC7F231F265B0063244E /* myCV.app */,
 				11EBBC93231F265E0063244E /* myCVTests.xctest */,
+				114387342329D628008A91C5 /* myCVUITests.xctest */,
+				114387402329D71E008A91C5 /* myCVUITest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				11EBBC97231F265E0063244E /* myCVTests.swift */,
-				1103A2F32329D0E1002F7E52 /* myCVUITests.swift */,
 				11EBBC99231F265E0063244E /* Info.plist */,
 			);
 			path = myCVTests;
@@ -108,6 +143,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		114387332329D628008A91C5 /* myCVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1143873B2329D628008A91C5 /* Build configuration list for PBXNativeTarget "myCVUITests" */;
+			buildPhases = (
+				114387302329D628008A91C5 /* Sources */,
+				114387312329D628008A91C5 /* Frameworks */,
+				114387322329D628008A91C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myCVUITests;
+			productName = myCVUITests;
+			productReference = 114387342329D628008A91C5 /* myCVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1143873F2329D71E008A91C5 /* myCVUITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 114387472329D71E008A91C5 /* Build configuration list for PBXNativeTarget "myCVUITest" */;
+			buildPhases = (
+				1143873C2329D71E008A91C5 /* Sources */,
+				1143873D2329D71E008A91C5 /* Frameworks */,
+				1143873E2329D71E008A91C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				114387462329D71E008A91C5 /* PBXTargetDependency */,
+			);
+			name = myCVUITest;
+			productName = myCVUITest;
+			productReference = 114387402329D71E008A91C5 /* myCVUITest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		11EBBC7E231F265B0063244E /* myCV */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11EBBC9C231F265E0063244E /* Build configuration list for PBXNativeTarget "myCV" */;
@@ -153,6 +223,13 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Sandy Lee";
 				TargetAttributes = {
+					114387332329D628008A91C5 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					1143873F2329D71E008A91C5 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 11EBBC7E231F265B0063244E;
+					};
 					11EBBC7E231F265B0063244E = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -177,11 +254,27 @@
 			targets = (
 				11EBBC7E231F265B0063244E /* myCV */,
 				11EBBC92231F265E0063244E /* myCVTests */,
+				114387332329D628008A91C5 /* myCVUITests */,
+				1143873F2329D71E008A91C5 /* myCVUITest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		114387322329D628008A91C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1143873E2329D71E008A91C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11EBBC7D231F265B0063244E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +295,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		114387302329D628008A91C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1143873C2329D71E008A91C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114387432329D71E008A91C5 /* myCVUITest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11EBBC7B231F265B0063244E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,7 +325,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1103A2F42329D0E1002F7E52 /* myCVUITests.swift in Sources */,
 				11EBBC98231F265E0063244E /* myCVTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +332,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		114387462329D71E008A91C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11EBBC7E231F265B0063244E /* myCV */;
+			targetProxy = 114387452329D71E008A91C5 /* PBXContainerItemProxy */;
+		};
 		11EBBC95231F265E0063244E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 11EBBC7E231F265B0063244E /* myCV */;
@@ -252,6 +364,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		114387392329D628008A91C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q92VVSK64B;
+				INFOPLIST_FILE = myCVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.com.fslee18.myCVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1143873A2329D628008A91C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q92VVSK64B;
+				INFOPLIST_FILE = myCVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.com.fslee18.myCVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		114387482329D71E008A91C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q92VVSK64B;
+				INFOPLIST_FILE = myCVUITest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.com.fslee18.myCVUITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = myCV;
+			};
+			name = Debug;
+		};
+		114387492329D71E008A91C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q92VVSK64B;
+				INFOPLIST_FILE = myCVUITest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.com.fslee18.myCVUITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = myCV;
+			};
+			name = Release;
+		};
 		11EBBC9A231F265E0063244E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -449,6 +635,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1143873B2329D628008A91C5 /* Build configuration list for PBXNativeTarget "myCVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114387392329D628008A91C5 /* Debug */,
+				1143873A2329D628008A91C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		114387472329D71E008A91C5 /* Build configuration list for PBXNativeTarget "myCVUITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114387482329D71E008A91C5 /* Debug */,
+				114387492329D71E008A91C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		11EBBC7A231F265B0063244E /* Build configuration list for PBXProject "myCV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
