@@ -12,11 +12,14 @@ import XCTest
 var sut:URLSession!
 
 class myCVTests: XCTestCase {
+    
+    var app: XCUIApplication!
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         sut = URLSession(configuration: .default)
     }
+    
 
     override func tearDown() {
         sut = nil

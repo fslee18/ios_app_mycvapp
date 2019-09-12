@@ -23,6 +23,8 @@ class myCVViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        view.accessibilityIdentifier = "onboardingView"
+
     }
     
     
@@ -31,6 +33,7 @@ class myCVViewController: UIViewController {
         super.viewDidLoad()
         loadingActivity.alpha = 0.0
         loadingActivity.sizeToFit()
+        view.accessibilityIdentifier = "onboardingView"
 
         // Do any additional setup after loading the view.
     }

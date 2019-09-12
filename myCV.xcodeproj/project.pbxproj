@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1103A2F42329D0E1002F7E52 /* myCVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1103A2F32329D0E1002F7E52 /* myCVUITests.swift */; };
 		11EBBC83231F265B0063244E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBBC82231F265B0063244E /* AppDelegate.swift */; };
 		11EBBC85231F265B0063244E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EBBC84231F265B0063244E /* ViewController.swift */; };
 		11EBBC88231F265B0063244E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EBBC86231F265B0063244E /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1103A2F32329D0E1002F7E52 /* myCVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCVUITests.swift; sourceTree = "<group>"; };
 		11EBBC7F231F265B0063244E /* myCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EBBC82231F265B0063244E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EBBC84231F265B0063244E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				11EBBC97231F265E0063244E /* myCVTests.swift */,
+				1103A2F32329D0E1002F7E52 /* myCVUITests.swift */,
 				11EBBC99231F265E0063244E /* Info.plist */,
 			);
 			path = myCVTests;
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1103A2F42329D0E1002F7E52 /* myCVUITests.swift in Sources */,
 				11EBBC98231F265E0063244E /* myCVTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
